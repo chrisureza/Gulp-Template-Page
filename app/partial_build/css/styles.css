@@ -1,3 +1,11 @@
+.flex_h-end {
+  display: flex;
+  justify-content: flex-end; }
+
+.flex_v-center {
+  display: flex;
+  align-items: center; }
+
 .testing {
   width: 42.85714%;
   display: flex; }

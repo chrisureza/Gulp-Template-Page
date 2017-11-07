@@ -1,0 +1,46 @@
+.header_container{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: green;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.header_menu-icon{
+    display: inline-block
+}
+
+.header_logo{
+   display: inline-block;
+    
+    h1{
+        margin: 0;
+        color: white;
+    }
+}
+
+.main-menu_display{
+        @media (max-width: 991px) {
+            display: none;
+        }
+}
+
+.header_search-section{
+    display: inline-flex;
+    padding: 0 10px;
+
+    .header_search-bar{
+        border: 1px solid white;
+        width: 240px;
+    }
+}
+
+.header_session-section{
+    display: inline-block;
+    padding: 0 5px;
+}

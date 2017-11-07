@@ -1,0 +1,26 @@
+.main-menu {
+  list-style-type: none;
+  margin: 4px 0 0 0;
+  padding: 0;
+  color: whitesmoke;
+  display: inline-flex;
+  cursor: pointer; }
+  @media (max-width: 991px) {
+    .main-menu {
+      display: block; } }
+
+.main-menu_item {
+  margin: auto 15px;
+  border-bottom: 2px solid green; }
+  @media (max-width: 991px) {
+    .main-menu_item {
+      padding: 15px 0;
+      margin: 0;
+      border-bottom: none;
+      text-align: center; } }
+  .main-menu_item:hover {
+    border-bottom: 2px solid; }
+    @media (max-width: 991px) {
+      .main-menu_item:hover {
+        border-bottom: none;
+        background: blue; } }
