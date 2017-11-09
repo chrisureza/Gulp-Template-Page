@@ -1,13 +1,31 @@
 .side-menu_container {
   height: calc(100% - 60px);
-  background: #3C3C3C;
+  background: #5F5F5F;
   padding: 0;
   box-shadow: 0px 0 0px rgba(0, 0, 0, 0.24), 2px 0px 12px rgba(0, 0, 0, 0.8);
   position: absolute;
-  left: -400px;
-  transition: left 500ms; }
+  left: calc(((100% * 3 / 12) + 10px)* -1);
+  transition: transform 500ms; }
+  @media (max-width: 1199px) {
+    .side-menu_container {
+      left: calc(((100% * 4 / 12) + 10px)* -1); } }
+  @media (max-width: 991px) {
+    .side-menu_container {
+      left: calc(((100% * 6 / 12) + 10px)* -1); } }
+  @media (max-width: 767px) {
+    .side-menu_container {
+      left: calc(((100% * 9 / 12) + 10px)* -1); } }
   .side-menu_container-show {
-    left: 0px; }
+    transform: translateX(100%); }
+    @media (max-width: 1199px) {
+      .side-menu_container-show {
+        transform: translateX(100%); } }
+    @media (max-width: 991px) {
+      .side-menu_container-show {
+        transform: translateX(100%); } }
+    @media (max-width: 767px) {
+      .side-menu_container-show {
+        transform: translateX(100%); } }
 
 @media (min-width: 992px) {
   .main-menu_display-side-menu {

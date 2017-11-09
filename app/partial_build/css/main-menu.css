@@ -12,7 +12,7 @@
 
 .main-menu_item {
   margin: auto 15px;
-  border-bottom: 2px solid green; }
+  border-bottom: 2px solid #00805E; }
   @media (max-width: 991px) {
     .main-menu_item {
       padding: 15px 0;

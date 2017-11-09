@@ -32,5 +32,7 @@
   border-left: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer; }
+  .search-bar_icon-container:hover {
+    background: #14ab95; }
   .search-bar_icon-container .search-bar_icon {
     margin: 6px; }

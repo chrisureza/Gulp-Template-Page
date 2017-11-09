@@ -1,10 +1,12 @@
+@import "variables";
+
 .header_container{
     position: relative;
     z-index: 23;
     display: flex;
     align-items: center;
     height: 60px;
-    background: #00805E;
+    background: $main-color;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
@@ -20,6 +22,18 @@
     width: 60px;
     padding: 16px 11px;
     cursor: pointer;
+
+    &:hover{
+        background: #5F5F5F;
+    }
+
+    &:active{
+        background: #5F5F5F;
+    }
+
+    &-active{
+        background: #5F5F5F;
+    }
 }
 
 .header_menu-icon-img{
@@ -44,7 +58,27 @@
 
 .header_search-section{
     display: inline-flex;
-    padding: 0 10px;
+    margin: 0 10px;
+    transition: box-shadow 300ms;
+
+    &--active{
+        box-shadow: 0 0px 2px rgba(0,0,0,.14), 0 3px 3px rgba(0,0,0,.28);
+
+        .search-bar_input{
+            background: whitesmoke;
+            color: black;
+            border-color: rgb(87, 168, 253);
+        }
+
+        .search-bar_icon-container{
+            border-color: rgb(87, 168, 253);
+            background-color: rgb(87, 168, 253);
+
+            &:hover{
+                background-color: rgb(67, 148, 230);
+            }
+        }
+    }
 }
 
 .header_session-section{

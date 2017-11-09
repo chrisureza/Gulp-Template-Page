@@ -1,3 +1,5 @@
+@import "variables";
+
 .session-section{
     &_log-buttons{
         display: inline-flex;
@@ -9,11 +11,6 @@
         margin: 0;
         border-bottom: none;
         text-align: center;
-
-    &:hover{
-            border-bottom: none;
-            background: blue;
-    }
 }
 
 .log-button{
@@ -25,14 +22,25 @@
     border-radius: 4px;
     background: grey;
     border: 2px solid black;
+    box-shadow: 0 0px 2px rgba(0,0,0,.14), 0 3px 3px rgba(0,0,0,.28);  
 
     &_log-in{
         background: #00A088;
         border: 2px solid rgb(8, 151, 123);
+        
+
+        &:hover{
+            background: $main-color--light-hover;
+        }
     }
 
     &_sign-up{
         background: rgb(255, 53, 80);
         border: 2px solid rgb(248, 30, 66);
+
+        &:hover{
+            background: #ff5454;
+            
+        }
     }
 }

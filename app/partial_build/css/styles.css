@@ -12,3 +12,9 @@
 
 body {
   background: #F2F2F2; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
