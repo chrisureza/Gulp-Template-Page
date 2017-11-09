@@ -1,8 +1,11 @@
 .header_container{
+    position: relative;
+    z-index: 23;
     display: flex;
     align-items: center;
     height: 60px;
-    background: green;
+    background: #00805E;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
 .header_content{
@@ -12,7 +15,16 @@
 }
 
 .header_menu-icon{
-    display: inline-block
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    padding: 16px 11px;
+    cursor: pointer;
+}
+
+.header_menu-icon-img{
+    height: 28px;
+    width: 38px;
 }
 
 .header_logo{
@@ -24,20 +36,15 @@
     }
 }
 
-.main-menu_display{
-        @media (max-width: 991px) {
-            display: none;
-        }
+.main-menu_display-header{
+    @media (max-width: 991px) {
+        display: none;
+    }
 }
 
 .header_search-section{
     display: inline-flex;
     padding: 0 10px;
-
-    .header_search-bar{
-        border: 1px solid white;
-        width: 240px;
-    }
 }
 
 .header_session-section{

@@ -8,6 +8,7 @@
     cursor: pointer;
 
     @media (max-width: 991px) {
+        margin: 0;
         display: block;
     }
 }
@@ -28,7 +29,8 @@
 
         @media (max-width: 991px) {
             border-bottom: none;
-            background: blue;
+            background: rgb(255, 53, 80);
+            //border: 2px solid rgb(248, 30, 66);
         }
     }
 }

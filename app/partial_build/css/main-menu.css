@@ -7,6 +7,7 @@
   cursor: pointer; }
   @media (max-width: 991px) {
     .main-menu {
+      margin: 0;
       display: block; } }
 
 .main-menu_item {
@@ -23,4 +24,4 @@
     @media (max-width: 991px) {
       .main-menu_item:hover {
         border-bottom: none;
-        background: blue; } }
+        background: #ff3550; } }

@@ -9,7 +9,7 @@
 <body>
   <div class="header_container">
     <div class="header_menu-icon">
-      <button>H</button>
+      <img class="header_menu-icon-img" src="./imgs/main-menu_icon.png" />
     </div>
     <div class="container">
       <div class="row">
@@ -17,7 +17,7 @@
           <div class="logo header_logo">
             <h1>LOGO</h1>
           </div>
-          <div class="main-menu_display">
+          <div class="main-menu_display-header">
             <div class="main-menu-container">
               <ul class="main-menu">
                 <li class="main-menu_item">Link 1</li>
@@ -30,9 +30,11 @@
         </div>
         <div class="header_content col-xs-6 flex_h-end flex_v-center">
           <div class="header_search-section">
-            <div class="header_search-bar"><span>search</span>
+            <div class="search-bar">
+              <input class="search-bar_input" placeholder="Search" />
             </div>
-            <div class="header_search-icon"><span>search</span>
+            <div class="search-bar_icon-container">
+              <img class="search-bar_icon" src="//www.gstatic.com/images/icons/material/system/1x/search_white_24dp.png" />
             </div>
           </div>
           <div class="header_session-section">
@@ -55,13 +57,21 @@
     </div>
   </div>
   <div class="side-menu_container col-lg-3 col-md-4 col-sm-6 col-xs-9">
-    <div class="main-menu-container">
-      <ul class="main-menu">
-        <li class="main-menu_item">Link 1</li>
-        <li class="main-menu_item">Link 2</li>
-        <li class="main-menu_item">Link 3</li>
-        <li class="main-menu_item">Link 4</li>
-      </ul>
+    <div class="main-menu_display-side-menu">
+      <div class="main-menu-container">
+        <ul class="main-menu">
+          <li class="main-menu_item">Link 1</li>
+          <li class="main-menu_item">Link 2</li>
+          <li class="main-menu_item">Link 3</li>
+          <li class="main-menu_item">Link 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="side-menu">
+      <li class="side-menu_item">Side Link 1</li>
+      <li class="side-menu_item">Side Link 2</li>
+      <li class="side-menu_item">Side Link 3</li>
+      <li class="side-menu_item">Side Link 4</li>
     </div>
   </div>
   <h1>hello</h1>
@@ -72,6 +82,7 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <link rel="stylesheet" type="text/css" href="css/header.css" />
   <link rel="stylesheet" type="text/css" href="css/main-menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/search-bar.css" />
   <link rel="stylesheet" type="text/css" href="css/session-section.css" />
   <link rel="stylesheet" type="text/css" href="css/side-menu.css" />
   <!-- endbuild-->

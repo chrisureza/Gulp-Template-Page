@@ -1,4 +1,36 @@
 .side-menu_container{
-    height: 100%;
-    background: red;
+    height: calc(100% - 60px);
+    background: #3C3C3C;
+    padding: 0;
+    box-shadow: 0px 0 0px rgba(0, 0, 0, 0.24), 2px 0px 12px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: -400px;  //corregir
+    transition: left 500ms;
+
+    &-show{
+        left: 0px;
+    }
+}
+
+.main-menu_display-side-menu{
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.side-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    display: block;
+    cursor: pointer;
+
+    &_item{
+
+        &:hover{
+            background: rgb(255, 53, 80);
+            //border: 2px solid rgb(248, 30, 66);
+        }
+    }
 }

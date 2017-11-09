@@ -1,3 +1,24 @@
 .side-menu_container {
-  height: 100%;
-  background: red; }
+  height: calc(100% - 60px);
+  background: #3C3C3C;
+  padding: 0;
+  box-shadow: 0px 0 0px rgba(0, 0, 0, 0.24), 2px 0px 12px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: -400px;
+  transition: left 500ms; }
+  .side-menu_container-show {
+    left: 0px; }
+
+@media (min-width: 992px) {
+  .main-menu_display-side-menu {
+    display: none; } }
+
+.side-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  display: block;
+  cursor: pointer; }
+  .side-menu_item:hover {
+    background: #ff3550; }

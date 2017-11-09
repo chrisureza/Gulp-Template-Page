@@ -1,28 +1,17 @@
 div(class="header_container")
     div(class="header_menu-icon")
-        button H
+        img(class="header_menu-icon-img" src="./imgs/main-menu_icon.png")
     div(class="container")
         div(class="row")
             div(class="header_content col-xs-6")
                 div(class="logo header_logo")
                     h1 LOGO
-                div(class="main-menu_display")
+                div(class="main-menu_display-header")
                     include ../main-menu/main-menu.pug
 
             div(class="header_content col-xs-6 flex_h-end flex_v-center")
                 div(class="header_search-section")
-                    div(class="header_search-bar")
-                        span search
-                    div(class="header_search-icon")
-                        span search
+                    include ../search-bar/search-bar.pug
 
                 div(class="header_session-section")
-                    div(class="session-section_log-buttons")
-                        div(class="session-section_log-in")
-                            button(class="log-button log-button_log-in") Log In
-                        div(class="session-section_sign-up")
-                            button(class="log-button log-button_sign-up") Sign Up
-                    div(class="session-section")
-                        div(class="session-section_picture")
-                        div(class="session-section_description")
-                        div(class="session-section_more-options")
+                    include ../session-section/session-section.pug

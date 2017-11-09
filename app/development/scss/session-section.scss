@@ -3,3 +3,36 @@
         display: inline-flex;
     }
 }
+
+.side-menu_item{
+        padding: 15px 0;
+        margin: 0;
+        border-bottom: none;
+        text-align: center;
+
+    &:hover{
+            border-bottom: none;
+            background: blue;
+    }
+}
+
+.log-button{
+    margin: 0 5px;
+    color: white;
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background: grey;
+    border: 2px solid black;
+
+    &_log-in{
+        background: #00A088;
+        border: 2px solid rgb(8, 151, 123);
+    }
+
+    &_sign-up{
+        background: rgb(255, 53, 80);
+        border: 2px solid rgb(248, 30, 66);
+    }
+}

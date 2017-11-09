@@ -1,9 +1,15 @@
-"use strict";
+'use strict';
 
-var a = 0;
-var b = 1;
-var c = function c(a) {
-  return a + b;
-};
-
-var thereBeRock = a;
+var sideMenuLogic = function () {
+    var logic = {
+        toggleMenu: function toggleMenu() {
+            document.querySelector('.header_menu-icon').addEventListener('click', function () {
+                document.querySelector('.side-menu_container').classList.toggle("side-menu_container-show");
+            });
+        },
+        init: function init() {
+            logic.toggleMenu();
+        }
+    };
+    return logic.init();
+}();
