@@ -3,6 +3,10 @@
 .search-bar{
     border: none;
     width: 240px;
+
+    @media(max-width:768px){
+    width: 3px;
+    }
 }
 
 .search-bar_input{

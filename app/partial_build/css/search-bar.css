@@ -1,6 +1,9 @@
 .search-bar {
   border: none;
   width: 240px; }
+  @media (max-width: 768px) {
+    .search-bar {
+      width: 3px; } }
 
 .search-bar_input {
   color: white;

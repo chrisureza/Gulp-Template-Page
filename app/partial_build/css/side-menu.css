@@ -1,11 +1,12 @@
 .side-menu_container {
   height: calc(100% - 60px);
-  background: #5F5F5F;
+  background: #3F3F46;
   padding: 0;
   box-shadow: 0px 0 0px rgba(0, 0, 0, 0.24), 2px 0px 12px rgba(0, 0, 0, 0.8);
   position: absolute;
   left: calc(((100% * 3 / 12) + 10px)* -1);
-  transition: transform 500ms; }
+  transition: transform 500ms;
+  z-index: 10; }
   @media (max-width: 1199px) {
     .side-menu_container {
       left: calc(((100% * 4 / 12) + 10px)* -1); } }
@@ -38,5 +39,7 @@
   color: whitesmoke;
   display: block;
   cursor: pointer; }
-  .side-menu_item:hover {
-    background: #ff3550; }
+  .side-menu_item {
+    border-bottom: 1px solid #797979; }
+    .side-menu_item:hover {
+      background: #008061; }

@@ -6,10 +6,8 @@ html
     body
         include ../components/header/header.pug
         include ../components/side-menu/side-menu.pug
-        h1 hello
-        p Christian
-
-        include ../components/footer/footer.pug
+        include ../components/content-nav/content-nav.pug
+        
 
 
         
@@ -23,9 +21,11 @@ html
         link(rel="stylesheet" type="text/css" href="css/search-bar.css")
         link(rel="stylesheet" type="text/css" href="css/session-section.css")
         link(rel="stylesheet" type="text/css" href="css/side-menu.css")
+        link(rel="stylesheet" type="text/css" href="css/content-nav.css")
         // endbuild
 
         // build:js js/main-script.min.js
         script(src="js/sideMenuLogic.js")
         script(src="js/searchBarLogic.js")
+        script(src="js/contentNavLogic.js")
         // endbuild 
